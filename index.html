@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mama Bona's Restaurant</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- HEADER NAVIGATION -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="img/logorst.jpg" alt="Logo Café" />
+      <h1>Mama Bona's Restaurant</h1>
+    </div>
+    <nav>
+      <a href="#menuSection">Menu</a>
+      <a href="#orderSection">Pesanan</a>
+      <a href="#historySection">Riwayat</a>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <!-- Pencarian -->
+    <section class="search-section">
+      <input type="text" id="searchInput" placeholder="Cari menu...">
+    </section>
+
+    <!-- KATEGORI -->
+    <section class="category-section">
+      <button class="category-btn active" data-category="all">Semua</button>
+      <button class="category-btn" data-category="Makanan">Makanan</button>
+      <button class="category-btn" data-category="Minuman">Minuman</button>
+    </section>
+
+    <!-- MENU -->
+    <section id="menuSection" class="menu-section">
+      <h2>Daftar Menu</h2>
+      <div id="menuList" class="menu-list"></div>
+    </section>
+
+    <!-- ORDER -->
+    <section id="orderSection" class="order-section">
+      <h2>Pesanan</h2>
+      <ul id="orderList"></ul>
+      <div class="total">
+        Total: Rp <span id="totalPrice">0</span>
+      </div>
+      <button id="checkoutBtn">Checkout</button>
+      <button id="clearOrderBtn" class="clear-btn">Hapus Pesanan</button>
+    </section>
+
+    <!-- HISTORY -->
+    <section id="historySection" class="history-section">
+      <h2>Riwayat Pembelian</h2>
+      <ul id="historyList"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Mama Bona's Restaurant | Thank You</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
